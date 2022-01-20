@@ -6,4 +6,5 @@ from django.http import HttpResponse
 
 
 def trial_func(request):
-    return HttpResponse("Wazzzupppp")
+    x = 1
+    return render(request, 'hello.html', {'name': 'FRIEND'})
